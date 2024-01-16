@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BD Travel</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- icon link -->
+    <script src="https://kit.fontawesome.com/803eec79d7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- header section -->
     <header class="header">
         <div class="website-name">
             <img class="website-icon" src="images/icon.png" alt="">
             <h2 class="BD-Travel">BD <span class="travel">Travel</span></h2>
         </div>
         <nav class="nav">
-            <img class="nav-icon" src="images/icons/nav.svg" alt="">
+            <h1 class="nav-icon"><i class="fa-solid fa-bars"></i></h1>
             <ul class="links">
                 <li><a class="first-link" href="">Home</a></li>
                 <li><a href="">Packages</a></li>
@@ -28,14 +31,91 @@
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
-            
         </nav>
     </header>
-
     <main>
+        <!-- banner section -->
+        <section class="banner">
+            <h1 class="title-one">Explore Your Travel</h1>
+            <p class="banner-info">Take your longest holiday yet!
+                Browse properties offering long-term stays, many at reduced monthly rates.Save 15% or more when you book
+                and stay before 1 April 2024
+            <p>
+            <div class="search">
+                <input class="search-btn" type="text" placeholder="Where go">
+
+                <select class="search-btn" name="" id="">
+                    <option value="">When</option>
+                    <option value="">Today</option>
+                    <option value="">Tomorrow</option>
+                    <option value="">Next week</option>
+                </select>
+
+
+                <select class="search-btn" name="" id="">
+                    <option value="">Select Type</option>
+                    <option value="">Family Tour</option>
+                    <option value="">Honeymoon</option>
+                    <option value="">Personal</option>
+                </select>
+
+                <div>
+                    <button id="find-now">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span class="find-now-margin">Find Now</span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Our Popular Tours section -->
+        <section class="our-popular-tours">
+            <div class="popular-tours1">
+                <h2 class="title-two">Our Popular Tours</h2>
+                <p class="common-text">In our list below, you will find platforms in different niches, such as traveling around Europe, traveling on a budget, luxury vacations, and much more. Although the content may vary, successful travel resources usually have three things in common:</p>
+                <ul>
+                    <li>
+                        <p class="common-text">Attendance - The project must have traffic. The volume may vary for each niche for a blog to be considered successful.</p>
+                    </li>
+                    <li>
+                        <p class="common-text">Recognition - The audience is very familiar with the project or brand.</p>
+                    </li>
+                    <li>
+                        <p class="common-text">Confidence - Readers rely on the authors' opinions and trust the information.</p>
+                    </li>
+                </ul>
+                <p class="common-text">Remember that we cannot compare projects only in terms of traffic, as they compete inside their own niches.We tried to collect the best travel blogs on the web in 2024 in various travel-related niches.</p>
+                <button class="common-btn">Read More</button>
+            </div>
+
+            <div class="popular-tours2">
+                <img src="images/popular-tours.png" alt="">
+            </div>
+        </section>
+<!-- choose-your-destination section -->
+        <section class="choose-your-destination">
+            <h2 class="title-two">Choose Your Destination</h2>
+            <p class="common-text">For individuals wanting to travel, finding the best travel location for flights makes a difference. Here are the top picks:</p>
+            <div class="all-destination">
+                <div class="row1">
+                    <h3 id="Maldives" class="destination">Maldives</h3>
+                    <h3 id="Indonesia" class="destination">Indonesia</h3>
+                </div>
+                <div class="row2">
+                    <h3 id="Srilanka" class="destination">Srilanka</h3>
+                    <h3 id="North-America" class="destination">North America</h3>
+                    <h3 id="Kashmir" class="destination">Kashmir</h3>
+                </div>
+                <div class="row3">
+                    <h3 id="Bangladesh" class="destination">Bangladesh</h3>
+                    <h3 id="Bandarban" class="destination">Bandarban</h3>
+                </div>
+            </div>
+        </section>
+
 
     </main>
-
 </body>
 
 <footer class="footer">
