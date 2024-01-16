@@ -1,0 +1,116 @@
+/* common styles */
+html {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+* {
+    font-family: 'Mulish', sans-serif;
+}
+
+:root {
+    --primary-color: #FF5400;
+    --secondary-color: #131318;
+    --nav-color: #424247;
+    --p-color: #5A5A5D;
+}
+
+body {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* header related styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BD-Travel {
+    margin-left: 17px;
+}
+
+.website-name {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+/* .website-icon {
+    width: 48px;
+    height: 56.008px;
+} */
+
+.travel {
+    color: var(--primary-color);
+}
+
+/* nav style */
+
+.first-link {
+    color: var(--primary-color);
+}
+
+.links {
+    display: flex;
+    gap: 44px;
+}
+
+nav li {
+    list-style: none;
+
+}
+
+nav a {
+    color: var(--nav-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+.nav-icon {
+    display: none;
+}
+
+
+/* media query */
+@media screen and (max-width: 576px) {
+    /* common styles */
+    body{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /* header related styles */
+    .BD-Travel {
+        margin-left: 3px;
+    }
+
+    .website-name {
+
+        align-items: center;
+        font-size: 21px;
+        font-weight: 800;
+    }
+
+    .website-icon {
+        width: 28.724px;
+        height: 33.516px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+    }
+
+    nav>.nav-icon:hover .links{
+        display: inline;
+    }
+    
+}
