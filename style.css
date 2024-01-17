@@ -1,9 +1,4 @@
 /* common styles */
-html {
-    max-width: 1440px;
-    margin: 0 auto;
-
-}
 
 * {
     font-family: 'Mulish', sans-serif;
@@ -16,6 +11,7 @@ html {
     --p-color: #5A5A5D;
 }
 
+header,
 body {
     max-width: 1170px;
     margin: 0 auto;
@@ -327,6 +323,38 @@ input[type="text"]:focus {
     background: rgba(233, 68, 68, 0.05);
 }
 
+/* What’s New Section styles */
+.whats-new{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 5px;
+    background: linear-gradient(0.25turn, #ebbb9c93, #98ebeb93, #c394ecb6);
+    border-radius: 20px;
+    width: 1170px;
+}
+.whats-new .common-text{
+    padding: 0 50px;
+    padding-bottom: 50px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery div {
+    width: 274px;
+    height: 186px;
+    margin-bottom: 150px;
+}
+
+.gallery div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
 /* Newsletter-section styles */
 .Newsletter-section {
     margin-top: 70px;
@@ -345,6 +373,7 @@ input[type="text"]:focus {
     border-radius: 16px;
     border: 1px solid #FF5400;
     padding: 40px;
+    padding-left: 20px;
 }
 
 .Newsletter-hr {
@@ -410,6 +439,11 @@ input[type="email"]:focus {
 }
 
 /* footer style */
+footer {
+    /* width: 1440px; */
+    background-color: rgba(19, 19, 24, 0.05);
+    ;
+}
 
 .footer {
     display: flex;
@@ -417,12 +451,12 @@ input[type="email"]:focus {
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-    background: rgba(19, 19, 24, 0.05);
+
 }
 
 .footer .website-name {
-    margin-right: 0;
-    padding: 0;
+    /* margin-right: 0;
+    padding: 0; */
 }
 
 .fa-brands {
@@ -457,7 +491,7 @@ input[type="email"]:focus {
 
     /* common styles */
     body {
-        max-width: 335px;
+        width: 335px;
         margin: 0 auto;
 
     }
@@ -476,6 +510,8 @@ input[type="email"]:focus {
     .our-popular-tours,
     .why-choose-us-part {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     /* header related styles */
@@ -575,7 +611,7 @@ input[type="email"]:focus {
     }
 
     .why-us-card {
-        width: 335px;
+        width: 300px;
         height: 289px;
     }
 
@@ -584,77 +620,102 @@ input[type="email"]:focus {
         margin-bottom: 24px;
     }
 
+    /* What ne.................. */
+    .whats-new{
+     width: 335px;
+    }
+    
+    
+    .gallery{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+    
+    .gallery div {
+        width: 274px;
+        height: 196px;
+        margin-bottom: 130px;
+    }
+    .gallery div h3{
+        font-size: 1rem;
+    }
+    
+
 
     /* Newsletter-section styles */
     .Newsletter-section {
-        margin-top: 70px;
+        margin-top: 10%;
     }
 
 
 
     .Newsletter-part-1 {
-        width: 335px;
+        width: 300px;
         height: 353px;
+        margin-left: 0px;
+        padding: 15px;
 
     }
 
-    .Newsletter-hr {
-        width: 288px;
-    }
 
-    .Newsletter-part-1 input,
-    #btn {
-        width: 393px;
+    .Newsletter-part-1 input {
+        width: 278px;
         height: 52px;
-        border: 0;
-        border-radius: 8px;
-        background: rgba(19, 19, 24, 0.05);
-        margin-top: 10px;
-        padding-left: 16px;
+        margin-left: 0px;
+        padding-left: 10px;
     }
 
-
     #btn {
-        background-color: var(--primary-color);
-        width: 214.023px;
+        width: 288px;
 
     }
 
     .Newsletter-part-2 {
-        width: 672px;
-        height: 422px;
-        border-radius: 16px;
-        background: url("images/Newsletter.png"), no-repeat;
-        margin-left: 24px;
+        width: 335px;
+        height: 300px;
+        margin-top: 20px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
 
+    .Newsletter-part-2 img {
+        width: 100%;
     }
 
     .offer {
-        color: #FFF;
-        width: 324px;
-        height: 100px;
-        text-align: center;
-        border-radius: 16px;
-        background: #FF5400;
-        transform: rotate(-19.628deg);
-        padding-top: 20px;
-        position: relative;
-        top: 255px;
-        left: 340px;
+        width: 214.023px;
+        height: 79.268px;
+        top: 170px;
+        left: 115px;
 
     }
 
     .offer p {
-        font-size: 24px;
-        margin: 0;
-        padding: 0;
+        font-size: 15px;
     }
 
     .offer h4 {
-        font-size: 32px;
+        font-size: 21px;
         margin: 0;
         padding: 0;
 
     }
+
+    /* footer related styles */
+    /* .footer div {
+        margin: 20px 20px;
+    } */
+
+    .footer p {
+        width: 287px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .footer-hr {
+        width: 300px;
+
+    }
+
 
 }
