@@ -28,6 +28,13 @@ body {
     font-weight: 800;
 }
 
+.title-3 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
 .common-text {
     color: rgba(19, 19, 24, 0.70);
     font-size: 16px;
@@ -229,7 +236,7 @@ input[type="text"]:focus {
 
 #Kashmir {
     border-radius: 16px;
-    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url("images/Kashmir.png"), lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url("images/Kashmir.png"), no-repeat;
 }
 
 #Bangladesh {
@@ -274,10 +281,170 @@ input[type="text"]:focus {
 
 
 
+/* Why Choose Us section styles */
+.why-choose-us {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
 
+.why-choose-us-part {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+}
 
+.why-us-card {
+    width: 549px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    padding-top: 32px;
+    padding-left: 32px;
+    text-align: left;
+}
 
+.why-us-card>h3 {
+    text-align: left;
+}
 
+.why-us-card>p {
+    width: 85%
+}
+
+.card-1 {
+    background: rgba(251, 181, 99, 0.05);
+    margin-right: 12px;
+}
+
+.card-2 {
+    background: rgba(41, 206, 246, 0.05);
+    margin-left: 12px;
+}
+
+.card-3 {
+    background: rgba(233, 68, 68, 0.05);
+}
+
+/* Newsletter-section styles */
+.Newsletter-section {
+    margin-top: 70px;
+}
+
+.Newsletter-section,
+.Newsletter-part-1 {
+    display: flex;
+}
+
+.Newsletter-part-1 {
+    width: 393px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+}
+
+.Newsletter-hr {
+    background-color: rgba(19, 19, 24, 0.10);
+}
+
+.Newsletter-part-1 input,
+#btn {
+    width: 393px;
+    height: 52px;
+    border: 0;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 10px;
+    padding-left: 16px;
+}
+
+input[type="email"]:focus {
+    outline: 0;
+}
+
+#btn {
+    background-color: var(--primary-color);
+    width: 413px;
+
+}
+
+.Newsletter-part-2 {
+    width: 672px;
+    height: 422px;
+    border-radius: 16px;
+    background: url("images/Newsletter.png"), no-repeat;
+    margin-left: 24px;
+
+}
+
+.offer {
+    color: #FFF;
+    width: 324px;
+    height: 100px;
+    text-align: center;
+    border-radius: 16px;
+    background: #FF5400;
+    transform: rotate(-19.628deg);
+    padding-top: 20px;
+    position: relative;
+    top: 255px;
+    left: 340px;
+
+}
+
+.offer p {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.offer h4 {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* footer style */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer .website-name {
+    margin-right: 0;
+    padding: 0;
+}
+
+.fa-brands {
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.footer div {
+    margin: 20px 20px;
+}
+
+.footer p {
+    text-align: center;
+    width: 769px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.footer-hr {
+    border-color: rgba(19, 19, 24, 0.10);
+    width: 872px;
+}
 
 
 
@@ -305,7 +472,9 @@ input[type="text"]:focus {
 
     }
 
-    .our-popular-tours {
+    .Newsletter-section,
+    .our-popular-tours,
+    .why-choose-us-part {
         flex-direction: column;
     }
 
@@ -383,6 +552,11 @@ input[type="text"]:focus {
     }
 
     /* choose-your-destination section styles */
+
+    .why-choose-us {
+        margin-top: 24px;
+    }
+
     .row1,
     .row2,
     .row3,
@@ -396,14 +570,91 @@ input[type="text"]:focus {
     .destination {
         padding-top: 70px;
         width: 335px;
-        height: 100px;
+        height: 120px;
         margin: 0;
     }
 
-
-    /* .choose-your-destination .title-two{
-        margin-bottom: 10px;
+    .why-us-card {
+        width: 335px;
+        height: 289px;
     }
-     */
+
+    .card-1 {
+
+        margin-bottom: 24px;
+    }
+
+
+    /* Newsletter-section styles */
+    .Newsletter-section {
+        margin-top: 70px;
+    }
+
+
+
+    .Newsletter-part-1 {
+        width: 335px;
+        height: 353px;
+
+    }
+
+    .Newsletter-hr {
+        width: 288px;
+    }
+
+    .Newsletter-part-1 input,
+    #btn {
+        width: 393px;
+        height: 52px;
+        border: 0;
+        border-radius: 8px;
+        background: rgba(19, 19, 24, 0.05);
+        margin-top: 10px;
+        padding-left: 16px;
+    }
+
+
+    #btn {
+        background-color: var(--primary-color);
+        width: 214.023px;
+
+    }
+
+    .Newsletter-part-2 {
+        width: 672px;
+        height: 422px;
+        border-radius: 16px;
+        background: url("images/Newsletter.png"), no-repeat;
+        margin-left: 24px;
+
+    }
+
+    .offer {
+        color: #FFF;
+        width: 324px;
+        height: 100px;
+        text-align: center;
+        border-radius: 16px;
+        background: #FF5400;
+        transform: rotate(-19.628deg);
+        padding-top: 20px;
+        position: relative;
+        top: 255px;
+        left: 340px;
+
+    }
+
+    .offer p {
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .offer h4 {
+        font-size: 32px;
+        margin: 0;
+        padding: 0;
+
+    }
 
 }
